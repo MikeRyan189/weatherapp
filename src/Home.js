@@ -22,7 +22,7 @@ function Home() {
   return (
     <div className = 'main'>
     <div className='search'>
-      <input id='searchBar' type='text' placeholder='search by city' value={location}
+      <input id='searchBar' type='text' placeholder='search by city or zip code' value={location}
        onChange={event => setLocation(event.target.value)} onKeyDown={search}/>
     </div>
     <div className="Home">
