@@ -26,7 +26,7 @@ function Home() {
        onChange={event => setLocation(event.target.value)} onKeyDown={search}/>
     </div>
     <div className="Home">
-      <h1 id='cityName'>{data.name}</h1>
+      <div id='cityName'>{data.name}</div>
       {data.main ? <p id='temp'>{data.main.temp.toFixed()}°F</p> : null}
       <div className="smallBar">
       {data.weather ? <p id='conditions'>{data.weather[0].main}</p> : null}
